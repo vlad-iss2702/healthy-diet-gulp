@@ -1,0 +1,26 @@
+@import "./../base/mixin.scss";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+img {
+	max-width: 100%;
+}
+a {
+    @include transition-03;
+    font-family: "Paytone One", sans-serif;
+}
+.display-none {
+    display: none;
+}
+.margin-t-90 {
+    margin-top: 90px;
+}

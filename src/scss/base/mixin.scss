@@ -1,0 +1,44 @@
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+@mixin d-flex-standart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin transition-03 {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+}
+@mixin transition-05 {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+@mixin transition-06 {
+    -webkit-transition: all 0.6s 0s ease;
+    -moz-transition: all 0.6s 0s ease;
+    -o-transition: all 0.6s 0s ease;
+    transition: all 0.6s 0s ease;
+}
+@mixin transition-07 {
+    -webkit-transition: all 0.7s 0s ease;
+    -moz-transition: all 0.7s 0s ease;
+    -o-transition: all 0.7s 0s ease;
+    transition: all 0.7s 0s ease;
+}
+@mixin transition-09 {
+    -webkit-transition: all 0.9s 0s ease;
+    -moz-transition: all 0.9s 0s ease;
+    -o-transition: all 0.9s 0s ease;
+    transition: all 0.9s 0s ease;
+}
+.flex-standart {
+    @include d-flex-standart;
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800|Pacifico|Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./../fonts/icomoon.eot?rz8jlr');
+    src:  url('./../fonts/icomoon.eot?rz8jlr#iefix') format('embedded-opentype'),
+      url('./../fonts/icomoon.ttf?rz8jlr') format('truetype'),
+      url('./../fonts/icomoon.woff?rz8jlr') format('woff'),
+      url('./../fonts/icomoon.svg?rz8jlr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-search:before {
+    content: "\e90c";
+  }
+  .icon-comments:before {
+    content: "\e90a";
+  }
+  .icon-user:before {
+    content: "\e90b";
+  }
+  .icon-plus:before {
+    content: "\e905";
+  }
+  .icon-play:before {
+    content: "\e904";
+  }
+  .icon-google-plus:before {
+    content: "\e901";
+  }
+  .icon-instagram:before {
+    content: "\e900";
+  }
+  .icon-brand:before {
+    content: "\e900";
+  }
+  .icon-social:before {
+    content: "\e900";
+  }
+  .icon-arrow-up-thick:before {
+    content: "\e903";
+  }
+  .icon-vertical_align_top:before {
+    content: "\e902";
+  }
+  .icon-list:before {
+    content: "\e908";
+  }
+  .icon-angle-left:before {
+    content: "\e906";
+  }
+  .icon-facebook:before {
+    content: "\e907";
+  }
+  .icon-angle-right:before {
+    content: "\e90f";
+  }
+  .icon-chevron-up:before {
+    content: "\e912";
+  }
+  .icon-chevron-down:before {
+    content: "\e916";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-close:before {
+    content: "\e909";
+  }
+  
