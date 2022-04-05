@@ -1,0 +1,43 @@
+.contact-map {
+    padding: 60px 0;
+}
+.contact-block {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-block__form {
+    width: 65%;
+}
+.contact-block__info {
+    width: 33%;
+    padding: 50px 0 0 50px;
+}
+.contact-title {
+    color: #1F1F1F;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.contact-block__info-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    i {
+        color: #8f9195;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    p {
+        color: #1F1F1F;
+        font-family: "Raleway", sans-serif;
+        font-size: 17px;
+        color: #8a8a8a;
+        font-weight: 400;
+        margin-bottom: 5px;
+        strong {
+            color: #2a2a2a;
+        }
+    }
+}

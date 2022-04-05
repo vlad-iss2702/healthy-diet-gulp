@@ -320,8 +320,8 @@
 .single-blog-other {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #f0e9ff;
     img {
         width: 60px;
@@ -332,8 +332,17 @@
 .single-blog-other__prev {
     display: flex;
     align-items: center;
+    @include transition-05;
+    &:hover {
+        .blog-other__prev-img {
+           a {
+                &::before {
+                    opacity: 1;
+                }
+           }
+        }
+    }
     img {
-        margin-right: 15px;
         position: relative;
         &:before {
             position: absolute;
@@ -348,11 +357,18 @@
 .single-blog-other__next {
     display: flex;
     align-items: center;
-    img {
-        margin-left: 15px;
+    &:hover {
+        .blog-other__next-img {
+            a {
+                &::before {
+                    opacity: 1;
+                }
+            }
+         }
     }
 }
 .blog-other__prev-info {
+    margin-left: 20px;
     p {
         font-size: 16px;
         font-weight: 300;
@@ -372,6 +388,7 @@
     }
 }
 .blog-other__next-info {
+    margin-right: 20px;
     p {
         font-size: 16px;
         font-weight: 300;
@@ -389,4 +406,227 @@
             }
         }
     }
+}
+.blog-other__prev-img {
+    a {
+        position: relative;
+        display: block;
+        &:before {
+            font-family: 'icomoon';
+            background: #00000080;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '\e906';
+            top: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 30px;
+            opacity: 0;
+            @include transition-05;
+        }
+    }
+}
+.blog-other__next-img {
+    a {
+        position: relative;
+        display: block;
+        &:before {
+            font-family: 'icomoon';
+            background: #00000080;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '\e90f';
+            top: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 30px;
+            opacity: 0;
+            @include transition-05;
+        }
+    }
+}
+.single-blog__autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0e9ff;
+}
+.single-blog__autor-img {
+    width: 15%;
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+.single-blog__autor-info {
+    width: 85%;
+    h4 {
+        margin-bottom: 10px;
+        a {
+            font-size: 16px;
+            color: #666666;
+            font-family: "Raleway", sans-serif;
+            font-weight: 500;
+            @include transition-05;
+            &:hover {
+                color: #01745b;
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 13px;
+        font-family: "Raleway", sans-serif; 
+    }
+}
+.single-blog__comments {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0e9ff;
+}
+.blog__comments-item {
+    display: flex;
+    justify-content: space-between;
+}
+.blog__comments-img {
+    width: 12%;
+    img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0;
+    }
+}
+.blog__comments-info {
+    width: 88%;
+}
+.blog__comments-info-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    section {
+        display: flex;
+    }
+}
+.single-blog__comments-count {
+    margin-bottom: 40px;
+    p {
+        color: #1F1F1F;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+.blog__comments-item {
+    margin-bottom: 60px;
+}
+.blog__comments-info {
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 13px;
+        font-family: "Raleway", sans-serif;
+    }
+    section {
+        h5 {
+            display: flex;
+            align-items: center;
+            a {
+                font-size: 16px;
+                color: #666666;
+                font-family: "Raleway", sans-serif;
+                font-weight: 500;
+                margin-right: 20px;
+                &:hover {
+                    color: #01745b;
+                }
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+.blog__comments-info-reply {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    &:hover {
+        color: #01745b;
+    }
+}
+.single-blog__form {
+    form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    textarea {
+        width: 100%;
+        border: 1px solid #f0e9ff;
+        border-radius: 5px;
+        height: 48px;
+        padding: 10px;
+        font-size: 13px;
+        background: transparent;
+        resize: none;
+        line-height: 1.5;
+        color: #1F1F1F;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    input {
+        padding: 15px;
+        border: 1px solid #f0e9ff;
+        border-radius: 5px;
+        line-height: 1.5;
+        color: #1F1F1F;
+        font-family: "Raleway", sans-serif;
+        margin-bottom: 20px;
+    }
+    button {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        border: 1px solid #01745b;
+        color: #01745b !important;
+        @include transition-03;
+        background: none;
+        width: 30%;
+        padding: 15px;
+        margin-bottom: 20px;
+        &:hover {
+            color: #fff !important;
+            background: #01745b;
+        }
+    }
+}
+.blog__form-input-half {
+    width: 48%;
+    float: left;
+}
+.blog__form-input-compl {
+    width: 100%;
 }

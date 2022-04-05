@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"Контакты"
+})
+<body>
+    @@include('html/header.html',{})
+    <main>
+        <div class="title-back" style="background-image: url('img/main/banner2.jpg')">
+            <h1>Контакты</h1>
+        </div>
+        <div class="container">
+            <div class="contact-map">
+                <div id="map" style="height: 480px; position: relative; overflow: hidden;"></div>
+                <script>
+                    function initMap() {
+                        var uluru = {
+                            lat: -25.363,
+                            lng: 131.044
+                        };
+                        var grayStyles = [{
+                                featureType: "all",
+                                stylers: [{
+                                        saturation: -90
+                                    },
+                                    {
+                                        lightness: 50
+                                    }
+                                ]
+                            },
+                            {
+                                elementType: 'labels.text.fill',
+                                stylers: [{
+                                    color: '#ccdee9'
+                                }]
+                            }
+                        ];
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: {
+                                lat: -31.197,
+                                lng: 150.744
+                            },
+                            zoom: 9,
+                            styles: grayStyles,
+                            scrollwheel: false
+                        });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap"></script>
+            </div>
+            <div class="contact-block">
+                <div class="contact-block__form">
+                    <div class="single-blog__form">
+                        <div class="contact-title">
+                            <p>Get in Touch</p>
+                        </div>
+                        <form action="">
+                            <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="Write Comment" style="height: 212px;"></textarea>
+                            <input class="blog__form-input-half" type="text" placeholder="Name" />
+                            <input class="blog__form-input-half" type="text" placeholder="Email" />
+                            <input class="blog__form-input-compl" type="text" placeholder="Website" />
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-block__info">
+                    <div class="contact-block__info-item">
+                        <i class="icon-home-outline"></i>
+                        <section>
+                            <p><strong>Buttonwood, California.</strong></p>
+                            <p>Rosemead, CA 91770</p>
+                        </section>
+                    </div>
+                    <div class="contact-block__info-item">
+                        <i class="icon-device-tablet"></i>
+                        <section>
+                            <p><strong>+1 253 565 2365</strong></p>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </section>
+                    </div>
+                    <div class="contact-block__info-item">
+                        <i class="icon-mail"></i>
+                        <section>
+                            <p><strong>support@colorlib.com</strong></p>
+                            <p>Send us your query anytime!</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/modal.html',{})
+    @@include('html/footer.html',{})
+</body>
+</html>
